@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import DatePicker from "react-horizontal-datepicker";
+// import DatePicker from "react-horizontal-datepicker";
 import './BuyTicketsPage.css'
 import Link from 'next/link';
 import { usePathname, useParams } from 'next/navigation'
@@ -124,7 +124,7 @@ const BuyTicketsPage  = () => {
                             <h1>{movie.title} - {movie.language}</h1>
                             <h3>{movie.genre.join(",")}</h3>
                         </div>
-                        <DatePicker getSelectedDay={
+                        {/* <DatePicker getSelectedDay={
                             (date: any) => {
                                 console.log(date)
                                 setSelectedDate(date)
@@ -136,7 +136,7 @@ const BuyTicketsPage  = () => {
                             }
                             labelFormat={"MMMM"}
                             color={"rgb(248, 68, 100)"}
-                        />
+                        /> */}
                     </div>
 
                     {
