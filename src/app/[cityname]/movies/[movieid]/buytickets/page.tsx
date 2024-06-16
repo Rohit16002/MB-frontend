@@ -143,7 +143,7 @@ const BuyTicketsPage  = () => {
                         theatres && theatres.length > 0 &&
                         <div className='screens'>
                             {
-                                theatres.map((screen, index) => {
+                                theatres.map((screen: { _id: any; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; location: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; }, index: React.Key | null | undefined) => {
                                     let screenid = screen._id
                                     return (
                                         <div className='screen' key={index}>
